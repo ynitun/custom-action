@@ -68,4 +68,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY_ID: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
         with:
           bucket: github-action-hosting
-          dist-folders: ./dist
+          dist-folder: ./dist
