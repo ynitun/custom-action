@@ -1,5 +1,16 @@
 name: "Deploy to AWS s3"
 description: "Deploy a static website via AWS S3"
+inputs:
+  bucket:
+    description: "github-action-hosting"
+    required: true
+  bucket-region:
+    description: ""
+    required: false
+    defalut: "ap-southeast-1"
+  dist-folder:
+    description: "folder containing the file"
+    required: true
 runs:
   using: "node16"
   main: "main.js"
